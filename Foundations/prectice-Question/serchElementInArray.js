@@ -37,23 +37,15 @@ console.log(searchTheString(strings,"Priya"));
 //write a  funtion that returns the numbers of negative numbers in an array
 
 
-function findNagativeNumber(arr){
-    let count =0;
-    for(let i = 0 ; i<arr.length;i++){
-        if(arr[i] < 0){
-            count++
-        }
-    }
-    return count
-}
+.
 
 
-const arr1 = [20,-10,30,-5,-6,90,-3,89,-5,-6];
+// const arr1 = [20,-10,30,-5,-6,90,-3,89,-5,-6];
 
-console.log(findNagativeNumber(arr1));
+// console.log(findNagativeNumber(arr1));
 
 
-// ✅ Function to Find Largest Number in an Array
+// // ✅ Function to Find Largest Number in an Array
 
 function findLargestNumberInArray(arr){
     let largest = arr[0];
@@ -66,9 +58,9 @@ function findLargestNumberInArray(arr){
 }
 
 
-const arr2 = [10,30,20,10,80,50,90];
+const arr2 = [-4,-6,-7-2];
 
-console.log(findLargestNumberInArray(arr2));
+// console.log(findLargestNumberInArray(arr2));
 
 
 function findLargest(arr){
@@ -83,3 +75,38 @@ function findLargest(arr){
 
 const elm = [10,40,20,90,40,100];
 console.log(findLargest(elm));
+
+
+
+
+
+function findSmallestNumber(arr){
+    let smallest = arr[0];
+    for(let i = 0 ; i<arr.length;i++){
+        if(arr[i] < smallest){
+             smallest = arr[i]
+        }
+    }
+    return smallest;
+}
+
+
+const smllArry = [3,10,5,3,1,-2];
+console.log(findSmallestNumber(smllArry));
+
+
+
+function findLargestNumberAnArray(arr){
+    let lar = arr[0];
+    for(let i = 0 ; i< arr.length; i++){
+        if(arr[i] > lar){
+            lar = arr[i]
+        }
+    }
+    return lar
+}
+
+const largArray = [30,40,10,100,300,200,500];
+
+console.log(findLargestNumberAnArray(largArray));
+
