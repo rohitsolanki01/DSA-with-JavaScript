@@ -37,7 +37,7 @@ console.log(searchTheString(strings,"Priya"));
 //write a  funtion that returns the numbers of negative numbers in an array
 
 
-.
+
 
 
 // const arr1 = [20,-10,30,-5,-6,90,-3,89,-5,-6];
