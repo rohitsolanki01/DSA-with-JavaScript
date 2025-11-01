@@ -1,58 +1,58 @@
 //wite a funtion that  retunr the second largest number in array 
 
 
-// function secondRargest(arr){
-//     let firstLargest = -Infinity;
-//     let secondLargest = -Infinity;
+function secondRargest(arr){
+    let firstLargest = -Infinity;
+    let secondLargest = -Infinity;
 
-//     for(let i =0 ; i< arr.length;i++){
-//         if(arr[i] > firstLargest){
-//             secondLargest = firstLargest;
-//             firstLargest = arr[i]
-//         }
-//         else if(arr[i] > secondLargest && arr[i] < firstLargest){
-//             secondLargest = arr[i];
-//         }
-//     }
-//     return secondLargest;
-// }
-
-
-// const arr = [20,10,40,30,10,20,90];
-
-// let res = secondRargest(arr);
-
-// console.log(res);
+    for(let i =0 ; i< arr.length;i++){
+        if(arr[i] > firstLargest){
+            secondLargest = firstLargest;
+            firstLargest = arr[i]
+        }
+        else if(arr[i] > secondLargest && arr[i] < firstLargest){
+            secondLargest = arr[i];
+        }
+    }
+    return secondLargest;
+}
 
 
-// //also with the fin the third largest in the aray 
+const arr = [20,10,40,30,10,20,90];
 
-// function thirdLargest(arr) {
-//     let firstLargest = -Infinity;
-//     let secondLargest = -Infinity;
-//     let thirdLargest = -Infinity;
+let res = secondRargest(arr);
 
-//     for(let i = 0; i < arr.length; i++) {
-//         if(arr[i] > firstLargest){
-//             thirdLargest = secondLargest;
-//             secondLargest = firstLargest;
-//             firstLargest = arr[i];
-//         } 
-//         else if(arr[i] > secondLargest && arr[i] < firstLargest){
-//             thirdLargest = secondLargest;
-//             secondLargest = arr[i];
-//         } 
-//         else if(arr[i] > thirdLargest && arr[i] < secondLargest){
-//             thirdLargest = arr[i];
-//         }
-//     }
+console.log(res);
 
-//     return thirdLargest;
-// }
 
-// const arr1 = [10, 20, 30];
-// let res1 = thirdLargest(arr1);
-// console.log(res1);
+//also with the fin the third largest in the aray 
+
+function thirdLargest(arr) {
+    let firstLargest = -Infinity;
+    let secondLargest = -Infinity;
+    let thirdLargest = -Infinity;
+
+    for(let i = 0; i < arr.length; i++) {
+        if(arr[i] > firstLargest){
+            thirdLargest = secondLargest;
+            secondLargest = firstLargest;
+            firstLargest = arr[i];
+        } 
+        else if(arr[i] > secondLargest && arr[i] < firstLargest){
+            thirdLargest = secondLargest;
+            secondLargest = arr[i];
+        } 
+        else if(arr[i] > thirdLargest && arr[i] < secondLargest){
+            thirdLargest = arr[i];
+        }
+    }
+
+    return thirdLargest;
+}
+
+const arr1 = [10, 20, 30];
+let res1 = thirdLargest(arr1);
+console.log(res1);
 
 
 
