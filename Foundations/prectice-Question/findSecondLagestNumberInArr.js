@@ -1,29 +1,24 @@
 //wite a funtion that  retunr the second largest number in array 
 
-
-function secondRargest(arr){
+function secondLargest(arr){
     let firstLargest = -Infinity;
-    let secondLargest = -Infinity;
+    let secondLArgest = -Infinity;
 
-    for(let i =0 ; i< arr.length;i++){
+    for(let i = 0 ;i <arr.length ; i++){
         if(arr[i] > firstLargest){
-            secondLargest = firstLargest;
-            firstLargest = arr[i]
+            secondLArgest = firstLargest;
+        firstLargest = arr[i];
+        }else if(arr[i] > secondLArgest && arr[i] < firstLargest){
+            secondLArgest = arr[i];
         }
-        else if(arr[i] > secondLargest && arr[i] < firstLargest){
-            secondLargest = arr[i];
-        }
+        
     }
-    return secondLargest;
+    return secondLArgest;
 }
 
 
-const arr = [20,10,40,30,10,20,90];
-
-let res = secondRargest(arr);
-
-console.log(res);
-
+const arr = [20,40,80,30,70,90];
+console.log(secondLargest(arr));
 
 //also with the fin the third largest in the aray 
 
