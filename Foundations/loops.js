@@ -60,10 +60,10 @@ for(let i = 5 ; i >0 ; i--){
     
 }
 
-for(let i =1 ; i> 0 ; i++){ //its called infanet loop the loop never ends 
-    console.log("Infanate Lopp0" + i);
+// for(let i =1 ; i> 0 ; i++){ //its called infanet loop the loop never ends 
+//     console.log("Infanate Lopp0" + i);
     
-}
+// }
  
 
 // make a fusntion of greet  and into a for loop print in multiple time 
@@ -125,3 +125,18 @@ for(let i = 0; i<arr1.length;i++){
 //     i++;
     
 // }
+
+
+
+//writ a code that return m a sum of number 
+
+
+function sumOfNumbers(n){
+    let sum = 0 ;
+     for(let i = 0 ; i<=n ; i++){
+        sum = sum + i;
+     }
+     return sum
+}
+
+console.log(sumOfNumbers(10));
