@@ -5,26 +5,25 @@
 
 
 
-function reversInteger(x){
-    let xCompy = x;  // to check that number is postive or nagative
-    x = Math.abs(x);  //to find last digits convert to posiive number
-    let rev =0 ;  //strore revesred value
+function reverseInteger(n){
+    let nCompy = n ;
+    n = Math.abs(n);
+    let reversed = 0;
 
-    while(x >0) {
-        let lastDigit = x %10; // last digits
-        rev = (rev * 10) + lastDigit;  // store lastDigit as a reversed
-        x = Math.floor(x / 10) ; // revoved last digit
+    while(n > 0){
+        let lastDigit = n % 10; // to find the last digit and also a remender
+        reversed = (reversed * 10) + lastDigit; //add last digit in the reversed 
+        n = Math.floor(n/10) // removed last digit in number
     }
 
-    // fid the limit of the int
+    //find the limit of the int 
 
-    let limit = Math.pow(2,31);
+    let limit = Math.pow(2,31); // 2347434 something limt of int
 
-    if(rev < -limit || rev > limit) return 0;
+    if(reversed < -limit || reversed > limit) return 0;
 
-    return (xCompy < 0) ? -rev : rev;
+    return (nCompy < 0) ? -reversed : reversed;
 }
 
 
-console.log(reversInteger(1234));
-    
+console.log(reverseInteger(-12345))
