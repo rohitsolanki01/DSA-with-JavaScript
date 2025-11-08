@@ -5,25 +5,28 @@
 
 
 
-function reverseInteger(n){
-    let nCompy = n ;
-    n = Math.abs(n);
-    let reversed = 0;
+// function reverseInteger(n){
+//     let nCompy = n ;
+//     n = Math.abs(n);
+//     let reversed = 0;
 
-    while(n > 0){
-        let lastDigit = n % 10; // to find the last digit and also a remender
-        reversed = (reversed * 10) + lastDigit; //add last digit in the reversed 
-        n = Math.floor(n/10) // removed last digit in number
-    }
+//     while(n > 0){
+//         let lastDigit = n % 10; // to find the last digit and also a remender
+//         reversed = (reversed * 10) + lastDigit; //add last digit in the reversed 
+//         n = Math.floor(n/10) // removed last digit in number
+//     }
 
-    //find the limit of the int 
+//     //find the limit of the int 
 
-    let limit = Math.pow(2,31); // 2347434 something limt of int
+//     let limit = Math.pow(2,31); // 2347434 something limt of int
 
-    if(reversed < -limit || reversed > limit) return 0;
+//     if(reversed < -limit || reversed > limit) return 0;
 
-    return (nCompy < 0) ? -reversed : reversed;
-}
+//     return (nCompy < 0) ? -reversed : reversed;
+// }
 
 
-console.log(reverseInteger(-12345))
+// console.log(reverseInteger(-12345))
+
+
+
