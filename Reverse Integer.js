@@ -30,3 +30,29 @@
 
 
 
+
+
+
+
+//prectivce of the reversed integer from your side also 
+
+// function revesedInteger(n) {
+//     let nCompy = n ;
+//     n = Math.abs(n);
+//     let reversed = 0;
+
+
+//     while(n > 0){
+//         let lastDigit = n %10 ; //to find the last digit or rimender of the number 
+//         reversed = (reversed * 10) + lastDigit ; // store last digi in revered 
+//         n = Math.floor(n / 10) ; //removed the number
+//     }
+//     let limit = Math.pow(2,31) // to find the range of the integer
+
+//     if(reversed < - limit || reversed > limit) return 0;
+
+//     return (nCompy < 0) ? -reversed : reversed
+// }
+
+
+// console.log(revesedInteger(-12345));
