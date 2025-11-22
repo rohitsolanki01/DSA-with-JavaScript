@@ -56,3 +56,66 @@
 
 
 // console.log(revesedInteger(-12345));
+
+
+
+//revesred the integer in  the number 
+
+
+// function reveredInteger(n){
+//     let NumberCompy = n;
+
+//     n = Math.abs(n);
+
+//     let rev = 0;
+
+//  while(n > 0) {
+//      let lastNumeber = n % 10;
+
+//      rev = (rev * 10) + lastNumeber;
+
+//      n = Math.floor(n /10); // removed the number
+//  }
+
+
+//  let limit = Math.pow(2,31); // to find the limit of the integer
+
+//  if(rev < -limit || rev > limit) return 0;
+
+//  return (NumberCompy < 0) ? -rev : rev;
+// }
+
+
+
+// console.log(reveredInteger(-12345));
+
+
+
+
+
+//reverse the integer in the number
+
+
+function reversedInteger(n){
+    let nCompy = n ;
+    n = Math.abs(n);
+
+    let rev = 0 ;
+      
+
+    while(n > 0){
+        let lastDidit = n % 10;
+        rev = (rev * 10) + lastDidit;
+
+        n = Math.floor(n / 10); // removed the number
+    }
+
+    let limit = Math.pow(2,31);
+
+    if(rev < - limit || rev > limit) return 0;
+
+    return (nCompy < 0) ? -rev : rev;
+}
+
+
+console.log(reversedInteger(-12345));
