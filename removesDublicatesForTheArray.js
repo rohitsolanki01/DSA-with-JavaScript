@@ -8,18 +8,39 @@
 // The first k elements of nums should contain the unique numbers in sorted order. The remaining elements beyond index k - 1 can be ignolet 
 
 
-let removesDublicates = (nums) => {
-    let px = 0;
+// let removesDublicates = (nums) => {
+//     let px = 0;
 
-    for(let i = 0 ; i< nums.length;i++){
-        if(nums[i] > nums[px]){
-            px = px +1;
-            nums[px] = nums[i];
-        }
-    }
-    return px + 1;
-}
+//     for(let i = 0 ; i< nums.length;i++){
+//         if(nums[i] > nums[px]){
+//             px = px +1;
+//             nums[px] = nums[i];
+//         }
+//     }
+//     return px + 1;
+// }
 
-let arr = [0,0,0,1,1,1,2,2,3,3,3,4,5,5,6]
+// let arr = [0,0,0,1,1,1,2,2,3,3,3,4,5,5,6]
 
-console.log(removesDublicates(arr))
+// console.log(removesDublicates(arr))
+
+
+
+
+// function removesDublicates(arr){
+//     let x = 0;
+
+//     for(let i = 0 ; i<arr.length;i++){
+//         if(arr[i] > arr[x]){
+//             x = x +1;
+//             arr[x] = arr[i];
+//         }
+//     }
+//     return x  +1 ;
+// }
+
+
+
+// let arr = [0,1,2,2,3,3,3,4,4,4,4,5,5,5,5,5,];
+
+// console.log(removesDublicates(arr));
