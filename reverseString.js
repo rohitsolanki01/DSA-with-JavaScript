@@ -18,16 +18,29 @@
 // Output: ["h","a","n","n","a","H"]
 
 
+// function reverseString(s){
+//     let len = s.length;
+//     let hlafLength = Math.floor(len /2);
+
+//     for(let i = 0 ; i< hlafLength ; i++){
+//         let temp =  s[i];
+//         s[i] = s[len -1 -i];
+//         s[len -1 -i] = temp;
+//     }
+//     return s;
+// }
+
+
 function reverseString(s){
     let len = s.length;
-    let hlafLength = Math.floor(len /2);
+    let halfLength = len /2;
 
-    for(let i = 0 ; i< hlafLength ; i++){
-        let temp =  s[i];
+    for(let i = 0 ; i< halfLength ; i++){
+        let temp = s[i];
         s[i] = s[len -1 -i];
         s[len -1 -i] = temp;
     }
-    return s;
+    return s
 }
 
 const s = ["h","e","l","l","o"];
@@ -40,6 +53,9 @@ const s3 = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q",
 console.log(reverseString(s3))
 
 
+// let s1 = ["P" , "r" ,"i" , "i" , "y" , "a"];
+
+// console.log(reverseString(s1));
 
 
 
@@ -61,3 +77,8 @@ console.log(reverseString(s3))
 // let s1 = ["P" , "r" ,"i" , "i" , "y" , "a" , "a" , "a"];
 
 // console.log(revesedStringPrectice(s1));
+
+
+
+
+

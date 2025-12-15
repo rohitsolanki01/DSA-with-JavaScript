@@ -17,27 +17,29 @@
 // Return the maximum profit (or 0 if no profit is possible).
 
 
-function maxProfit(prices){
-    let minPrice = Infinity;
-    let maxProfit  = 0;
+// function maxProfit(prices){
+//     let minPrice = Infinity;
+//     let maxProfit = 0;
 
 
-    for(let i =0 ; i<prices.length;i++){
-        let price = prices[i];
+//     for(let i = 0 ; i < prices.length ; i++){
+//         let price = prices[i];
 
-        if(price < minPrice){
-            minPrice = price
-        }
+//         if(price < minPrice){
+//             minPrice = price;
+//         }
 
-        let profit = price - minPrice;
+//         let profit = price - minPrice;
 
-        if(profit > maxProfit){
-            maxProfit = profit;
-        }
-    }
-    return maxProfit;
-}
+//         if(profit > maxProfit){
+//             maxProfit = profit;
+//         }
+//     }
+//     return maxProfit;
+// }
 
-let prices = [7,1,5,3,6,4];
 
-console.log(maxProfit(prices))
+// let arr = [7,1,2,3,4,5,6];
+
+// console.log(maxProfit(arr))
+
