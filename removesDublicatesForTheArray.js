@@ -49,20 +49,20 @@
 
 
 
-function removesDublicates(arr){
-    let x = 0;
+function removesDublicatesInPlace(nums){
+    let x = 0 ; 
 
-    for(let i =0 ; i< arr.length ; i++){
-        if(arr[i] > arr[x]){
+    for(let i = 0; i <nums.length; i++){
+        if(nums[i] > nums[x]){
             x = x +1;
-            arr[x] = arr[i];
+            nums[x] = nums[i];
         }
     }
-    return x + 1;
+    return (x + 1);
 }
 
 
+let nums = [0,0,0,1,1,1,2,2,3,3,4,4,5,5,6,6,7,7,7,7];
 
-let arr = [0,1,2,2,3,3,3,4,4,4,4,5,5,5,5,5,];
 
-console.log(removesDublicates(arr));
+console.log(removesDublicatesInPlace(nums));
