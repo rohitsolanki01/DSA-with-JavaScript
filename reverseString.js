@@ -32,20 +32,34 @@
 
 
 
+// function reverseString(s){
+//     let len = s.length;
+//     let halfLen = Math.floor(len /2);
+
+
+//     for(let i = 0; i < halfLen; i++){
+//         let temp = s[i];
+//         s[i] = s[len -1 -i];
+//         s[len -1 -i] = temp;
+//     }
+//     return s;
+// }
+
+
+
 function reverseString(s){
     let len = s.length;
     let halfLen = Math.floor(len /2);
 
 
-    for(let i = 0; i < halfLen; i++){
+
+    for(let i = 0; i< halfLen; i++){
         let temp = s[i];
-        s[i] = s[len -1 -i];
+        s[i] = s[len -1 - i];
         s[len -1 -i] = temp;
     }
     return s;
 }
-
-
 
 
 // const s = ["h","e","l","l","o"];
